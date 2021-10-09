@@ -1,0 +1,61 @@
+html,body {
+	height: 100%;
+	margin: 0;
+}
+
+body.login-page {
+	background-color: #d17474;
+	font-size: 14px;
+}
+
+h4{
+	text-align:center;
+}
+
+
+.login-page .card-wrapper {
+	width: 400px;
+	margin: 150px auto;
+}
+
+.login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.login-page .card.fat {
+	padding: 10px;
+}
+
+.login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.login-page .form-control {
+	border-width: 2.3px;
+}
+
+.login-page .form-group label {
+	width: 100%;
+}
+
+.login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+@media screen and (max-width: 425px) {
+	.login-page .card-wrapper {
+		width: 90px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.login-page .card.fat {
+		padding: 0;
+	}
+
+	.login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
