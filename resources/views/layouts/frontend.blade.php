@@ -11,21 +11,17 @@
 
     <title>Beauty Daily - {{$title}}</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/logo web.png">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('/css/fontawesome.css')}}">
+    
     <link rel="stylesheet" href="{{ asset('/css/tampilan.css')}}">
     <link rel="stylesheet" href="{{ asset('/css/login.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-
-    <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -53,13 +49,10 @@
       </nav>
     </header>
 
-    <div class="container">
+    
         @yield ('container')
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
+  
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
-
 </html>

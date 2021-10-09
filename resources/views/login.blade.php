@@ -20,7 +20,7 @@
 
 							<div class="form-group">
 								<label for="password">Password
-									<a href="forgot.html" class="float-right">
+									<a href="/forgot" class="float-right">
 										Forgot Password? </a>
 								</label>
 								<input id="password" type="password" class="form-control" name="password" required
@@ -31,7 +31,7 @@
 							</div>
 
 							<div class="form-group">
-								<a class="btn btn-primary btn-block" type="submit" value="login" href="/dashboard">
+								<a class="btn btn-primary btn-block" type="submit" value="login" href="/homeadmin">
 									LOGIN
 								</a>
 							</div>

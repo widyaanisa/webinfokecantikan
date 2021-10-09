@@ -1,109 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Dashboard Web Berita - @yield('title')</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-
-
+    <title> Dashboard Admin - {{$title}}</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
-    <meta name="theme-color" content="#7952b3">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <link rel="shortcut icon" href="images/logo web.png">
 
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('/css/dashboard.css') }}" rel="stylesheet">
-  </head>
-  <body>
+    <link rel="stylesheet" href="{{ asset('/css/dashboard.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
 
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">Sign out</a>
-    </div>
-  </div>
-</header>
+<body id="page-top">
 
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">
-              <span data-feather="home"></span>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('backend_dataartikel_index') }}">
-              <span data-feather="layers"></span>
-              News
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Categories
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Tags
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Users Management
-            </a>
-          </li>
+    <div id="wrapper">
+
+        <ul class="navbar-nav bg-white sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <div class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="images/logo web.png" alt="logo">
+                </div>
+                <div class="sidebar-brand-text">Dashboard</div>
+            </div>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="/homeadmin">
+                    <i class="fas fa-fw fa-home text-primary"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed text-primary" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-file-signature text-primary"></i>
+                    <span>Data</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-gradient-primary py-2 collapse-inner rounded">
+                        <a class="collapse-item text-white" href="/dataartikel">Artikel</a>
+                        <a class="collapse-item text-white" href="/datareview">Review</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="/usersmanagement">
+                    <i class="fas fa-fw fa-database text-primary"></i>
+                    <span>Users Management</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
         </ul>
-      </div>
-    </nav>
+        <div id="content-wrapper" class="d-flex flex-column">
 
-    @yield('content')
+            <div id="content">
 
-  </div>
-</div>
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
 
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
-    <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('/js/feather.min.js') }}"></script>
-    <script src="{{ asset('/js/Chart.min.js') }}"></script>
-    <script src="{{ asset('/js/dashboard.js') }}"></script>
-  </body>
+                    <ul class="navbar-nav ml-auto">
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="images/user.png">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="/profil">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="/setting">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
+                                    Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                @yield('content')
+
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current
+                                session.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="/">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <script src="js/sistem.js"></script>
+</body>
 </html>

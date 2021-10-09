@@ -34,13 +34,19 @@ Route::get('/login', function () {
     ["title" => "Login"]);
 });
 
-
-# BREAD Data ARTIKEL (Browse, Read, Edit, Add, Delete)
-Route::get('/dataartikel', [ArtikelController::class, 'frontend_index'])->name('frontend_dataartikel_index');
-
 # BackEnd
-Route::get('/dashboard', function() {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/homeadmin', function () {
+    return view('homeadmin',
+    ["title" => "Home Admin"]);
+});
 
-Route::get('/dashboard/dataartikel', [ArtikelController::class, 'backend_index'])->name('backend_dataartikel_index');
+Route::get('/dataartikel', function () {
+    return view('dataartikel.admin',
+    ["title" => "Data Artikel"]);
+});
+
+Route::get('/datareview', function () {
+    return view('datareview.admin',
+    ["title" => "Data Review"]);
+});
+
