@@ -48,7 +48,7 @@
                 <a class="nav-link collapsed text-primary" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-signature text-primary"></i>
-                    <span>What's new?</span>
+                    <span>Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-gradient-primary py-2 collapse-inner rounded">
@@ -57,6 +57,13 @@
                         <a class="collapse-item text-white" href="/datawantto">Want To?</a>
                     </div>
                 </div>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="/usersmanagement">
+                    <i class="fas fa-fw fa-database text-primary"></i>
+                    <span>Users Management</span></a>
             </li>
 
             <hr class="sidebar-divider d-none d-md-block">

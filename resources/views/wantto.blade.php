@@ -1,14 +1,13 @@
 @extends('Layouts.frontend')
 
     @section('container')
-
     <div class="page-heading products-heading header-text">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>You can write a honest review about beauty product</h4>
-              <h2>Let's try and review</h2>
+              <h4>You can Trade, Buy, Sell or Donate your Beauty Products</h4>
+              <h2>What do you want?</h2>
             </div>
           </div>
         </div>
@@ -132,17 +131,4 @@
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="col-md-12">
-            <ul class="pages">
-              <li><a href="#">1</a></li>
-              <li class="active"><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 @endsection

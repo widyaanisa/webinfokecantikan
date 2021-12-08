@@ -41,6 +41,9 @@
                 <a class="nav-link {{ ($title === "Review") ? 'active' : '' }}" href="/review">Review</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link {{ ($title === "Want To?") ? 'active' : '' }}" href="/wantto">Want To?</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link {{ ($title === "Login") ? 'active' : '' }}" href="/login">Login or Signup</a>
               </li>
             </ul>
@@ -52,6 +55,17 @@
     
         @yield ('container')
   
+        <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright &copy; 2021 Beauty Daily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>

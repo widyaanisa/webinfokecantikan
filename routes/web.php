@@ -29,6 +29,12 @@ Route::get('/review', function () {
     ["title" => "Review"]);
 });
 
+Route::get('/wantto', function () {
+    return view('Wantto',
+    ["title" => "Want To?"]);
+});
+
+
 Route::get('/login', function () {
     return view('login',
     ["title" => "Login"]);
@@ -36,17 +42,31 @@ Route::get('/login', function () {
 
 # BackEnd
 Route::get('/homeadmin', function () {
-    return view('homeadmin',
+    return view('layouts.backendadmin',
     ["title" => "Home Admin"]);
 });
 
-Route::get('/dataartikel', function () {
+Route::get('/dataartikeladmin', function () {
     return view('dataartikel.admin',
     ["title" => "Data Artikel"]);
 });
 
-Route::get('/datareview', function () {
+Route::get('/datareviewadmin', function () {
     return view('datareview.admin',
     ["title" => "Data Review"]);
 });
 
+Route::get('/datareviewuser', function () {
+    return view('datareview.user',
+    ["title" => "Data Review"]);
+});
+
+Route::get('/dataartikeluser', function () {
+    return view('dataartikel.user',
+    ["title" => "Data Artikel"]);
+});
+
+Route::get('/homeuser', function () {
+    return view('layouts.backend',
+    ["title" => "Home User"]);
+});
