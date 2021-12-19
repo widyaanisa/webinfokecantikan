@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backendadmin')
 
     @section('content')
     <div class="container-fluid">
@@ -28,17 +28,17 @@
                     <thead>
                         <tr>
                             <th>Judul</th>
+                            <th>Gambar</th>
                             <th>Deskripsi</th>
-                            <th>Foto</th>
                             <th> </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Cantik dengan serum Nutrieshe</td>
+                            <td><img src="images/product_01.jpg" width="240px"></td>
                             <td>NUTRISHE INTENSIVE BRIGHT & GLOW SERUM 
                             Nutrishe Intensive Bright & Glow Serum adalah serum ringan yang mengandung AlphaArbutin yang membantu meminimalkan darkspot, kulit tidak merata, mengurangi kulit kusam dan mencerahkan kulit. Serum ini juga diresapi dengan ekstrak Brown Seaweed (algae) yang mengandung protein untuk mensuplai sel kulit dengan hidrasi ekstra untuk kulit bercahaya. Bahan lain dalam serum ini adalah Centella Asiatica yang dikenal sebagai bahan penyembuh. Ini membantu memperkuat penghalang kulit, melawan jerawat, menghidrasi dan menenangkan.</td>
-                            <td><img src="images/product_01.jpg" width="240px"></td>
                             <td>
                                 <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
                                 <a class="view" title="View" data-toggle="tooltip"><i class="fas fa-eye"></i></a>

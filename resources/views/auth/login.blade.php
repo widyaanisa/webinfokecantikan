@@ -33,15 +33,15 @@
 
 
                             <div class="form-group">
-                                <a class="btn btn-danger btn-block" type="submit" value="login" href="layouts/backend">
+                                <a class="btn btn-danger btn-block" type="submit" value="login" href="homeadmin">
                                     LOGIN
                                 </a>
                             </div>
 
                             <div class="form-group">
-                                <a href="/signup" class="float-left">
+                                <a href="/register" class="float-left">
                                     Sign Up </a>
-                                <a href="/forgot" class="float-right">
+                                <a href="/forget" class="float-right">
                                     Forgot Password? </a>
                             </div>
 

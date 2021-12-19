@@ -1,17 +1,18 @@
-@extends('layouts.backend')
+@extends('layouts.backendadmin')
 
     @section('content')
+    
     <div class="container-fluid">
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-primary">Review</h1>
+    <h1 class="h3 mb-0 text-primary">Want To?</h1>
 </div>
 
 <div class="card shadow mb-4">
 
     <div
         class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Data Review</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Data Want To</h6>
     </div>
 
     <div class="card-body">
@@ -27,11 +28,11 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Nama Produk</th>
+                            <th>User</th>
+                            <th>Judul</th>
+                            <th>Gambar</th>
+                            <th>Jenis Kulit</th>
                             <th>Deskripsi</th>
-                            <th>Durasi Pemakaian Produk</th>
-                            <th>Foto</th>
-                            <th>Rate</th>
                             <th> </th>
                         </tr>
                     </thead>
@@ -62,4 +63,4 @@
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
-    @endsection
+ @endsection

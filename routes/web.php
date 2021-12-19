@@ -1,6 +1,13 @@
 <?php
 
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\artikelController;
+use App\Http\Controllers\adminController;
+use App\Http\Controllers\reviewController;
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\wanttoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,40 +21,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 # FrontEnd
-Route::get('/', function () {
-    return view('home',
-    ["title" => "Home"]);
+Route::get('/', [homeController::class,'index']);
+Route::get('/artikel', [artikelController::class,'index']);
+Route::get('/review', [reviewController::class,'index']);
+Route::get('/wantto', [wanttoController::class,'index']);
+Route::get('/login', [loginController::class,'index']);
+
+Route::get('/register', function () {
+    return view('register',
+    ["title" => "Sign Up"]);
 });
 
-Route::get('/article', function () {
-    return view('article',
-    ["title" => "Article"]);
-});
-
-Route::get('/review', function () {
-    return view('review',
-    ["title" => "Review"]);
-});
-
-Route::get('/wantto', function () {
-    return view('Wantto',
-    ["title" => "Want To?"]);
-});
-
-
-Route::get('/login', function () {
-    return view('login',
-    ["title" => "Login"]);
+Route::get('/forget', function () {
+    return view('forgetp',
+    ["title" => "Forget Password"]);
 });
 
 # BackEnd
 Route::get('/homeadmin', function () {
-    return view('layouts.backendadmin',
-    ["title" => "Home Admin"]);
+    return view('home.admin',
+    ["title" => "Home"]);
+});
+
+Route::get('/homeuser', function () {
+    return view('home.user',
+    ["title" => "Home"]);
 });
 
 Route::get('/dataartikeladmin', function () {
-    return view('dataartikel.admin',
+    return view('admin.dataartikel',
     ["title" => "Data Artikel"]);
 });
 
@@ -56,17 +58,27 @@ Route::get('/datareviewadmin', function () {
     ["title" => "Data Review"]);
 });
 
+Route::get('/datawanttoadmin', function () {
+    return view('datawantto.admin',
+    ["title" => "Data Want To"]);
+});
+
 Route::get('/datareviewuser', function () {
     return view('datareview.user',
     ["title" => "Data Review"]);
 });
 
-Route::get('/dataartikeluser', function () {
-    return view('dataartikel.user',
-    ["title" => "Data Artikel"]);
+Route::get('/datawanttouser', function () {
+    return view('datawantto.user',
+    ["title" => "Data Want To"]);
 });
 
-Route::get('/homeuser', function () {
-    return view('layouts.backend',
-    ["title" => "Home User"]);
+Route::get('/usersmanagement', function () {
+    return view('admin.usersmanage',
+    ["title" => "User Management"]);
+});
+
+Route::get('/profiladmin', function () {
+    return view('profil.admin',
+    ["title" => "Profil Admin"]);
 });
