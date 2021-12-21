@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdminsTable extends Migration
+class CreateDatareviewTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateAdminsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admins', function (Blueprint $table) {
-            $table->id('id_admins');
-            $table->text('username');
-            $table->text('password');
+        Schema::create('datareview', function (Blueprint $table) {
+            $table->id('id_datareview');
+            $table->string('judul');
+            $table->string('imgreview')->nullable();
+            $table->string('jeniskulit');
+            $table->string('deskripsi');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateAdminsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admins');
+        Schema::dropIfExists('datareview');
     }
 }

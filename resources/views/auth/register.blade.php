@@ -8,14 +8,21 @@
             <div class="card-wrapper">
                 <div class="card fat">
                     <div class="card-body">
+                        @csrf
                         <h4 class="card-title">Sign Up</h4>
-                        <form method="POST" class="my-login-validation" novalidate="">
+                        <form method="post" action="/register-user">
+                        @csrf    
                         <div class="form-group">
                                 <label for="nama">Nama
                                 </label>
-                                <input id="nama" type="nama" class="form-control" name="nama" value="" required
+                                <input id="nama" type="nama" class="form-control @error('nama')is-invalid @enderror" name="nama" placeholder="nama" required
                                     autofocus>
+                                @error('nama')
+                                <div class="invalid-feedback">
+                                    Please choose a username</div>
+                                    @enderror
                             </div>
+
                             <div class="form-group">
                                 <label for="domisili">Domisili
                                 </label>
@@ -26,12 +33,6 @@
                                 <label for="domisili">Tanggal lahir
                                 </label>
                                 <input id="date" type="date" class="form-control" name="date" value="" required
-                                    autofocus>
-                            </div>
-                            <div class="form-group">
-                                <label for="jeniskulit">Jenis Kulit
-                                </label>
-                                <input id="jeniskulit" type="jeniskulit" class="form-control" name="jeniskulit" value="" required
                                     autofocus>
                             </div>
                             <div class="form-group">
@@ -58,12 +59,12 @@
                                 <div class="invalid-feedback">
                                     Password is required
                                 </div>
-                            </div>
+</div>
 
-                            <div class="form-group">
-                                <a class="btn btn-danger btn-block" type="submit" value="signup" href="homeuser">
-                                    Sign Up
-                                </a>
+                                <div class="form-group">
+								<a class="btn btn-primary btn-block" type="submit" value="login" href="/homeuser">
+									Registrasi
+								</a>
                             </div>
 
                         </form>

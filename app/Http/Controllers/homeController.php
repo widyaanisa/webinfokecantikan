@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Artikel;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -14,8 +16,8 @@ class homeController extends Controller
      */
     public function index()
     {
-        return view('home',
-    ["title" => "Home"]);
+        $data = Artikel::all();
+        return view('home', ["title"=> "Home"], compact('data'));
     }
 
     /**

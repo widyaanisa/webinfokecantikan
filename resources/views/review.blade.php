@@ -24,11 +24,9 @@
                 <div class="row grid">
                     <div class="col-lg-4 col-md-4 all des">
                       <div class="product-item">
-                        <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$18.25</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                          <a href="#"><h4>Azarine Sunscreen</h4></a>
+                          <p>Jenis Kulit: All skin type</p>
                           <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
@@ -42,11 +40,9 @@
                     </div>
                     <div class="col-lg-4 col-md-4 all dev">
                       <div class="product-item">
-                        <a href="#"><img src="assets/images/product_02.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$16.75</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                          <a href="#"><h4>Some by Mi AHA BHA PHA 30 Days Miracle Serum </h4></a>
+                          <p>Jenis Kulit: Kulit Berjerawat</p>
                           <ul class="stars">
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
@@ -60,73 +56,16 @@
                     </div>
                     <div class="col-lg-4 col-md-4 all gra">
                       <div class="product-item">
-                        <a href="#"><img src="assets/images/product_03.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$32.50</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                          <a href="#"><h4> Avoskin Miraculous Refining Toner</h4></a>
+                          <p>Jenis Kulit: All Skin Type</p>
                           <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                           </ul>
                           <span>Reviews (36)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 all gra">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_04.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$24.60</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (48)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 all dev">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_05.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$18.75</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (60)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 all des">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_06.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$12.50</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (72)</span>
                         </div>
                       </div>
                     </div>

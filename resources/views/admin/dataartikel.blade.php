@@ -20,39 +20,43 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-12">
-                            <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                            <a type="button" class="btn btn-info add-new" href="/tambahdataartikel"><i class="fa fa-plus"></i> Add New</a>
                         </div>
                     </div>
                 </div>
+                
+             
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>Judul</th>
-                            <th>Gambar</th>
                             <th>Deskripsi</th>
                             <th> </th>
                         </tr>
                     </thead>
+                    @php
+    $no=0;
+    @endphp
+    @foreach($data as $da)
                     <tbody>
                         <tr>
-                            <td>Cantik dengan serum Nutrieshe</td>
-                            <td><img src="images/product_01.jpg" width="240px"></td>
-                            <td>NUTRISHE INTENSIVE BRIGHT & GLOW SERUM 
-                            Nutrishe Intensive Bright & Glow Serum adalah serum ringan yang mengandung AlphaArbutin yang membantu meminimalkan darkspot, kulit tidak merata, mengurangi kulit kusam dan mencerahkan kulit. Serum ini juga diresapi dengan ekstrak Brown Seaweed (algae) yang mengandung protein untuk mensuplai sel kulit dengan hidrasi ekstra untuk kulit bercahaya. Bahan lain dalam serum ini adalah Centella Asiatica yang dikenal sebagai bahan penyembuh. Ini membantu memperkuat penghalang kulit, melawan jerawat, menghidrasi dan menenangkan.</td>
+                            <td>{{$da->judul}}</td>
+                            <td>{{$da->deskripsi}}</td>
                             <td>
-                                <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
-                                <a class="view" title="View" data-toggle="tooltip"><i class="fas fa-eye"></i></a>
-                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
-                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                                <a class="view" title="View" data-toggle="tooltip" href="/viewdataartikel"><i class="fas fa-eye"></i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip" href="/editdataartikel"><i class="fas fa-edit"></i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip" href="/hapusdataartikel"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                     </tbody>
+                    @endforeach
                 </table>
             </div>
         </div>
     </div> 
     </div>
 </div>
+
 
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>

@@ -39,35 +39,27 @@
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Article</h2>
-              <a href="products.html">More Articles <i class="fa fa-angle-right"></i></a>
+              <a href="/artikel">More Articles <i class="fa fa-angle-right"></i></a>
             </div>
           </div>   
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="images/product_01.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                
-              </div>
-            </div>
-          </div>
+          
           <div class="col-md-4">
             <div class="product-item">
               <a href="#"><img src="images/product_02.jpg" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+              <a href="#"><h4>Jangan Lupa Pakai Sunscreen</h4></a>
+                <p>Hashtag #DiRumahAja memang jadi populer belakangan ini. Anda diwajibkan untuk berada di rumah sepanjang hari demi menjaga kesehatan diri serta orang lain dari penyebaran virus corona.</p>
              
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="images/product_03.jpg" alt=""></a>
+              <a href="#"><img src="images/product_01.jpg" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+                <a href="#"><h4>Cara Penggunaan Sheet Mask</h4></a>
+                <p>Jenis masker satu ini adalah yang paling disukai banyak orang. Kelebihan dari sheet mask adalah masker ini melembapkan dan menutrisi kulit secara instan karena kandungan serum yang tinggi.</p>
+             
               </div>
             </div>
           </div>
@@ -75,26 +67,8 @@
             <div class="product-item">
               <a href="#"><img src="images/product_04.jpg" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="images/product_05.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="images/product_06.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <a href="#"><h4>Manfaat AHA BHA untuk Kulit Wajah</h4></a>
+                <p>Seperti yang telah dijelaskan sebelumnya, AHA digunakan untuk mengatasi berbagai masalah kulit yang berkaitan dengan penuaan. Misalnya, warna kulit dan tekstur yang tidak merata serta kerutan.</p>
               </div>
             </div>
           </div>

@@ -40,7 +40,7 @@
                             <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ ($title === "artikel") ? 'active' : '' }}" href="/artikel">Article</a>
+                            <a class="nav-link {{ ($title === "Article") ? 'active' : '' }}" href="/artikel">Article</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ ($title === "Review") ? 'active' : '' }}" href="/review">Review</a>

@@ -7,37 +7,37 @@
         <div class="row justify-content-md-center">
             <div class="card-wrapper">
                 <div class="card fat">
-                    <div class="card-body">
+                @if(session('error'))
+            <div class="alert alert-danger">
+                <b>Opps!</b> {{session('error')}}
+            </div>
+            @endif
+            <div class="card-body">
                         <h4 class="card-title">Login</h4>
-                        <form method="POST" class="my-login-validation" novalidate="">
-                            <div class="form-group">
+                        <form form action="/login" method="post" class="my-login-validation" novalidate="">
+                        @csrf   
+                        <div class="form-group">
                                 <label for="username">Username
                                 </label>
-                                <input id="username" type="username" class="form-control" name="email" value="" required
-                                    autofocus>
+                                <input type="username" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username" autofocus required>
+                                @error('username')
                                 <div class="invalid-feedback">
-                                    Username is invalid
+                                    username is required
                                 </div>
+                                @enderror 
                             </div>
 
                             <div class="form-group">
                                 <label for="password">Password
 
                                 </label>
-                                <input id="password" type="password" class="form-control" name="password" required
-                                    data-eye>
-                                <div class="invalid-feedback">
-                                    Password is required
-                                </div>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Password" autofocus required>
                             </div>
-
-
                             <div class="form-group">
-                                <a class="btn btn-danger btn-block" type="submit" value="login" href="homeadmin">
-                                    LOGIN
-                                </a>
-                            </div>
-
+								<a class="btn btn-primary btn-block" type="submit" value="login" href="/homeadmin">
+									LOGIN
+								</a>
+							</div>
                             <div class="form-group">
                                 <a href="/register" class="float-left">
                                     Sign Up </a>

@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class review extends Model
 {
-    use HasFactory;
-}
+    protected $table ='datareview';
+
+    protected $fillable = [ 
+        'judul', 
+        'imgreview',
+        'jeniskulit',
+        'deskripsi'
+    ];
+    
+    protected $primaryKey = 'id_datareview'; 
+    }

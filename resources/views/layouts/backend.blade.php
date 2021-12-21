@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title> Dashboard Admin - {{$title}}</title>
+    <title> Dashboard - {{$title}}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top">
@@ -39,7 +39,7 @@
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
-                <a class="nav-link text-light" href="/homeadmin">
+                <a class="nav-link text-light" href="/homeuser">
                     <i class="fas fa-fw fa-home text-light"></i>
                     <span>Home</span></a>
             </li>
@@ -52,9 +52,8 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-light py-2 collapse-inner rounded">
-                        <a class="collapse-item text-primary" href="/dataartikeladmin">Artikel</a>
-                        <a class="collapse-item text-primary" href="/datareviewadmin">Review</a>
-                        <a class="collapse-item text-primary" href="/datawanttoadmin">Want To?</a>
+                        <a class="collapse-item text-primary" href="/datareviewuser">Review</a>
+                        <a class="collapse-item text-primary" href="/datawanttouser">Want To?</a>
                     </div>
                 </div>
             </li>

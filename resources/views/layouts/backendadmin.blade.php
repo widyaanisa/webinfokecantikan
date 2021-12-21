@@ -64,7 +64,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link text-light" href="/usersmanagement">
+                <a class="nav-link text-light" href="/usersmanage">
                     <i class="fas fa-fw fa-database text-light"></i>
                     <span>Users Management</span></a>
             </li>

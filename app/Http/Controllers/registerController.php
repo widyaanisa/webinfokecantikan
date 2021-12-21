@@ -1,43 +1,40 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
-class wanttoController extends Controller
+
+class registerController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('Wantto',
-    ["title" => "Want To?"]);
-    }
+    public function register() {
+        $data = User::all();
+        return view('auth.register', ["title" => "Registrasi"], compact('data'));
+    } 
 
-    
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required|min:5|max:150',
+            'domisili' => 'required|max:150',
+            'tanggallahir' => 'required|unique:users|max:150',
+            'email' => 'required|max:150',
+            'username' => 'required|unique:users|min:5|max:150',
+            'pasword' => 'required|min:5|max:250',
+        ]);
+
+        $validatedData['password']=bcrypt($validatedData['password']);
+        User::create($validatedData);
+ 
+        $request->session()->flash('success','Registration successfull! Please Login');
+ 
+        return redirect('/login');
     }
 
     /**

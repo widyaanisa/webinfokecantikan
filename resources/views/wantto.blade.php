@@ -25,17 +25,9 @@
                       <div class="product-item">
                         <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$18.25</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (12)</span>
+                          <a href="#"><h4>Want To Trade</h4></a>
+                          <p>Hai, aku mau trade Toner Npure ku baru 2x pemakaian</p>
+                          <span>Comments (12)</span>
                         </div>
                       </div>
                     </div>
@@ -43,17 +35,9 @@
                       <div class="product-item">
                         <a href="#"><img src="assets/images/product_02.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$16.75</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (24)</span>
+                          <a href="#"><h4>Want To Donate</h4></a>
+                          <p>Hallo, aku mau donate serum somethinc retinol ku karna ga cocok</p>
+                          <span>Comments (24)</span>
                         </div>
                       </div>
                     </div>
@@ -61,74 +45,13 @@
                       <div class="product-item">
                         <a href="#"><img src="assets/images/product_03.jpg" alt=""></a>
                         <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$32.50</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (36)</span>
+                          <a href="#"><h4>Want To Sell</h4></a>
+                          <p>Hai, aku mau jual Breylee Blackhead Step 1 masih baru blm dibuka segel</p>
+                          <span>Comments (36)</span>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 all gra">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_04.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$24.60</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (48)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 all dev">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_05.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$18.75</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (60)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 all des">
-                      <div class="product-item">
-                        <a href="#"><img src="assets/images/product_06.jpg" alt=""></a>
-                        <div class="down-content">
-                          <a href="#"><h4>Tittle goes here</h4></a>
-                          <h6>$12.50</h6>
-                          <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                          <ul class="stars">
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                          </ul>
-                          <span>Reviews (72)</span>
-                        </div>
-                      </div>
-                    </div>
+                   
                     <div class="col-md-12">
             <ul class="pages">
               <li><a href="#">1</a></li>
