@@ -15,7 +15,7 @@
                         <div class="form-group">
                                 <label for="nama">Nama
                                 </label>
-                                <input id="nama" type="nama" class="form-control @error('nama')is-invalid @enderror" name="nama" placeholder="nama" required
+                                <input id="nama" type="nama" class="form-control @error('nama')is-invalid @enderror" name="nama" placeholder="Nama" required
                                     autofocus>
                                 @error('nama')
                                 <div class="invalid-feedback">
@@ -26,25 +26,25 @@
                             <div class="form-group">
                                 <label for="domisili">Domisili
                                 </label>
-                                <input id="domisili" type="domisili" class="form-control" name="domisili" value="" required
+                                <input id="domisili" type="domisili" class="form-control" name="domisili" placeholder="Domisili" value="" required
                                     autofocus>
                             </div>
                             <div class="form-group">
-                                <label for="domisili">Tanggal lahir
+                                <label for="date">Tanggal lahir
                                 </label>
-                                <input id="date" type="date" class="form-control" name="date" value="" required
+                                <input id="date" type="date" class="form-control" name="date" value=""  required
                                     autofocus>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email
                                 </label>
-                                <input id="email" type="email" class="form-control" name="email" value="" required
+                                <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email" required
                                     autofocus>
                             </div>
                             <div class="form-group">
                                 <label for="username">Username
                                 </label>
-                                <input id="username" type="username" class="form-control" name="username" value="" required
+                                <input id="username" type="username" class="form-control" name="username" placeholder="Username" value="" required
                                     autofocus>
                                 <div class="invalid-feedback">
                                     Username is invalid
@@ -54,7 +54,7 @@
                             <div class="form-group">
                                 <label for="password">Password
                                 </label>
-                                <input id="password" type="password" class="form-control" name="password" required
+                                <input id="password" type="password" class="form-control" placeholder="Password" name="password" required
                                     data-eye>
                                 <div class="invalid-feedback">
                                     Password is required
